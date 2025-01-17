@@ -8,6 +8,7 @@ const btnCiego = document.getElementById("ciegoBtn");
 const scrollBtn = document.getElementById("scrollTopBtn");
 const btnColor = document.getElementById("changeColorBtn");
 const sectionChangeColor = document.getElementById("sectionText");
+const welcomeMsg = document.getElementById("welcomeMsg");
 
 const colors = [
   "bg-red-500",
@@ -92,6 +93,18 @@ function scrollToTop() {
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
+function setWelcomeMsg() {
+  const date = new Date();
+  const hour = date.getHours();
+
+  if (hour >= 6 && hour <= 12) {
+    welcomeMsg.innerText = "Buenos dias usuario";
+  } else if (hour >= 12 && hour <= 20) {
+    welcomeMsg.innerText = "Buenos tardes usuario";
+  } else {
+    welcomeMsg.innerText = "Buenos noches usuario";
+  }
+}
 
 btnColor.addEventListener("click", changeColor);
 scrollBtn.addEventListener("click", scrollToTop);
@@ -99,3 +112,4 @@ btnChangeTheme.addEventListener("click", changeTheme);
 btnSizeTxt.addEventListener("click", aumentarTexto);
 btnClickCount.addEventListener("click", clickCounter);
 btnCiego.addEventListener("click", leerTexto);
+setWelcomeMsg();
