@@ -1,0 +1,15 @@
+:root {
+    --color-primary: #4A90E2; /* Azul suave */
+    --color-secondary: #F5A623; /* Amarillo dorado */
+    --color-background: #F4F4F4; /* Fondo gris claro */
+    --color-text: #333333; /* Texto gris oscuro */
+    --color-accent: #50E3C2; /* Verde suave para acentos */
+}
+
+/* Tema oscuro */
+.dark {
+    --color-background: #3d3a3a; /* Fondo oscuro */
+    --color-text: #E0E0E0; /* Texto claro para el modo oscuro */
+    --color-primary: #3d5b7b; /* Azul oscuro para el modo oscuro */
+    --color-secondary: #F7A700; /* Amarillo para el modo oscuro */
+}

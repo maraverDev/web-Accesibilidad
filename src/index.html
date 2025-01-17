@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="globals.css" />
+    <script src="main.js" defer></script>
+    <title>Pagina</title>
+  </head>
+  <body
+    id="body"
+    class="bg-background text-text min-h-screen flex flex-col transition-all duration-300"
+  >
+    <div
+      id="progressBar"
+      class="fixed top-0 left-0 bg-green-500 h-1 w-0 transition-all duration-100 ease-in-out"
+    ></div>
+
+    <header
+      class="p-6 bg-primary text-white shadow-lg flex flex-col items-center"
+    >
+      <h1 class="text-3xl font-semibold">Bienvenido a la Página</h1>
+      <nav class="mt-4">
+        <ul class="flex justify-center space-x-8">
+          <li>
+            <a href="#seccion1" class="text-white hover:text-accent transition"
+              >Sección 1</a
+            >
+          </li>
+          <li>
+            <a href="#seccion2" class="text-white hover:text-accent transition"
+              >Sección 2</a
+            >
+          </li>
+          <li>
+            <a href="#contacto" class="text-white hover:text-accent transition"
+              >Contacto</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <nav>
+        <button
+          id="themeToggleBtn"
+          class="bg-primary text-white p-4 mt-4 rounded-full shadow-lg hover:bg-accent transition mx-3"
+        >
+          🌙
+        </button>
+        <button
+          id="textSizeBtn"
+          class="bg-primary text-white p-4 mt-4 rounded-full shadow-lg hover:bg-accent transition mx-3"
+        >
+          Aumentar texto
+        </button>
+        <button
+          id="ciegoBtn"
+          class="bg-primary text-white p-4 mt-4 rounded-full shadow-lg hover:bg-accent transition mx-3"
+        >
+          Modo ciego
+        </button>
+      </nav>
+    </header>
+
+    <main class="flex-grow text-center content-center h-screen">
+      <!-- Sección 1 -->
+      <section id="seccion1" class="mb-10 mx-10">
+        <span id="sectionText" class="bg-background p-2">
+          Este es un texto de ejemplo. Haz clic en el botón para cambiar su
+          color de fondo. Este es un texto de ejemplo. Haz clic en el botón para
+          cambiar su color de fondo. Este es un texto de ejemplo. Haz clic en el
+          botón para cambiar su color de fondo. Este es un texto de ejemplo. Haz
+          clic en el botón para cambiar su color de fondo. Este es un texto de
+          ejemplo. Haz clic en el botón para cambiar su color de fondo. Este es
+          un texto de ejemplo. Haz clic en el botón para cambiar su color de
+          fondo. Este es un texto de ejemplo. Haz clic en el botón para cambiar
+          su color de fondo. Este es un texto de ejemplo. Haz clic en el botón
+          para cambiar su color de fondo. </span
+        ><br />
+        <button
+          id="changeColorBtn"
+          class="mt-4 bg-primary text-white p-3 rounded-lg hover:bg-accent transition"
+        >
+          Cambiar color de fondo
+        </button>
+      </section>
+
+      <!-- Sección 2 -->
+      <section id="seccion2" class="mb-5">
+        <span>Contador de clics: <span id="clickCounter">0</span><br /></span>
+        <button
+          id="clickButton"
+          class="bg-primary text-white p-3 rounded-lg hover:bg-accent transition"
+        >
+          Haz clic aquí
+        </button>
+      </section>
+    </main>
+
+    <footer
+      id="contacto"
+      class="p-6 bg-primary text-white text-center shadow-lg"
+    >
+      <p>&copy; 2025 - Todos los derechos reservados.</p>
+      <p>Contacto: info@ejemplo.com</p>
+    </footer>
+
+    <!-- Botón "Ir arriba" -->
+    <button
+      id="scrollTopBtn"
+      class="fixed bottom-6 right-6 bg-secondary text-white p-4 rounded-full shadow-xl hidden"
+    >
+      ↑
+    </button>
+
+    <!-- Botón para alternar entre modo claro y oscuro -->
+  </body>
+</html>

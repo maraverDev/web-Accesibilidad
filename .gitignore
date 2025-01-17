@@ -1,0 +1,36 @@
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de configuración de IDEs y editores
+.vscode/
+.idea/
+
+# Archivos de dependencias y compilación
+node_modules/
+dist/
+build/
+
+# Archivos de entorno
+.env
+
+# Archivos de logs
+*.log
+
+# Archivos temporales
+*.tmp
+
+# Archivos de bases de datos
+*.sqlite
+*.db
+
+# Archivos de configuración de paquetes
+package-lock.json
+yarn.lock
+
+# Archivos de sistema de compilación
+*.class
+*.jar
+
+# Archivos de pruebas
+coverage/
